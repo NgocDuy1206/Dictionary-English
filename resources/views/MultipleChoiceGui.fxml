@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="729.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MultipleChoiceGame">
+   <children>
+      <Label layoutX="114.0" layoutY="29.0" prefHeight="35.0" prefWidth="250.0" text="Mutiple Choice Game" textFill="#1c9e05">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="correct" layoutX="592.0" layoutY="378.0" prefHeight="27.0" prefWidth="80.0" text="Correct!" textFill="#16733b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectAbtn" layoutX="208.0" layoutY="285.0" mnemonicParsing="false" text="A">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="selectCbtn" layoutX="208.0" layoutY="366.0" mnemonicParsing="false" text="C">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="selectBbtn" layoutX="208.0" layoutY="324.0" mnemonicParsing="false" text="B">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="selectDbtn" layoutX="207.0" layoutY="409.0" mnemonicParsing="false" text="D">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextquestionbtn" layoutX="580.0" layoutY="186.0" mnemonicParsing="false" text="Next Question" textFill="#087629">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrong" layoutX="590.0" layoutY="340.0" prefHeight="27.0" prefWidth="72.0" text="Wrong!" textFill="#16733b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="correct1" fitHeight="27.0" fitWidth="26.0" layoutX="559.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8_ok_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wrong1" fitHeight="27.0" fitWidth="24.0" layoutX="560.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-wrong-48.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="contentQuestion" layoutX="80.0" layoutY="73.0" prefHeight="200.0" prefWidth="318.0" promptText="Question..." styleClass="english-word-input" stylesheets="@../style.css">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="scoreText" layoutX="488.0" layoutY="47.0" prefHeight="37.0" prefWidth="102.0" stylesheets="@../style.css" />
+      <Label fx:id="healthText" layoutX="488.0" layoutY="100.0" prefHeight="38.0" prefWidth="102.0" stylesheets="@../style.css" />
+      <Button fx:id="replayBtn" layoutX="528.0" layoutY="247.0" mnemonicParsing="false" text="Replay" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <AnchorPane fx:id="container" layoutY="-1.0" prefHeight="429.0" prefWidth="648.0" stylesheets="@../style.css">
+         <children>
+            <Button fx:id="multiplechoicebtn" layoutX="176.0" layoutY="139.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="63.0" styleClass="menu-item" text="         ">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-question-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="guessthewordbtn" layoutX="324.0" layoutY="269.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="66.0" styleClass="menu-item" text="         ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-question-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="hangmanbtn" layoutX="506.0" layoutY="142.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0" styleClass="menu-item" text="          ">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-hang-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="131.0" layoutY="199.0" text="Multiple Choice">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="277.0" layoutY="312.0" text="Guess The Word">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="455.0" layoutY="199.0" text="Matching Word ">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
